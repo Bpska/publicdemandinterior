@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import { X, ChevronLeft, ChevronRight, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 interface LightboxProps {
   isOpen: boolean;
@@ -19,6 +20,7 @@ export default function Lightbox({
   currentIndex,
   onNavigate,
 }: LightboxProps) {
+  const router = useRouter();
   // Lock scroll when open
   useEffect(() => {
     if (isOpen) {
@@ -30,6 +32,18 @@ export default function Lightbox({
       document.body.style.overflow = "";
     };
   }, [isOpen]);
+
+  const handlePrev = React.useCallback((e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    const prevIndex = (currentIndex - 1 + images.length) % images.length;
+    onNavigate(prevIndex);
+  }, [currentIndex, images.length, onNavigate]);
+
+  const handleNext = React.useCallback((e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    const nextIndex = (currentIndex + 1) % images.length;
+    onNavigate(nextIndex);
+  }, [currentIndex, images.length, onNavigate]);
 
   // Keyboard navigation listeners
   useEffect(() => {
@@ -43,19 +57,7 @@ export default function Lightbox({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, currentIndex, images]);
-
-  const handlePrev = (e?: React.MouseEvent) => {
-    e?.stopPropagation();
-    const prevIndex = (currentIndex - 1 + images.length) % images.length;
-    onNavigate(prevIndex);
-  };
-
-  const handleNext = (e?: React.MouseEvent) => {
-    e?.stopPropagation();
-    const nextIndex = (currentIndex + 1) % images.length;
-    onNavigate(nextIndex);
-  };
+  }, [isOpen, handleNext, handlePrev, onClose]);
 
   const currentImage = images[currentIndex] || "";
 
@@ -64,7 +66,7 @@ export default function Lightbox({
     e.stopPropagation();
     onClose();
     // Redirect to quote page
-    window.location.href = "/quote";
+    router.push("/quote");
   };
 
   return (

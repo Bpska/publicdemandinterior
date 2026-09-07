@@ -99,28 +99,28 @@ export const services: Service[] = [
     id: "4",
     slug: "cupboard-storage",
     title: "Cupboard & Storage",
-    shortDesc: "Smart storage units, shoe racks, and custom wooden cabinets.",
-    description: "De-clutter your living spaces with customized cupboard and storage units. From elegant shoe racks at the entrance to vanity units, bookshelves, and hidden utility storage, we tailor every unit to match your room design.",
-    image: "/images/cupboard-storage-1.jpeg",
+    shortDesc: "Luxury floor-to-ceiling cupboards, illuminated open shelving, and custom storage.",
+    description: "De-clutter and elevate your home with bespoke floor-to-ceiling cupboards and designer storage solutions. Featuring sage green and gloss ivory doors, integrated vertical LED illuminated display shelves for accessories and shoes, and gold designer hardware.",
+    image: "/images/cupboard-and-storage.jpg",
     features: [
-      "Custom dimensions to fit wall niches exactly",
-      "Adjustable shelf configurations",
-      "Soft-close doors and hidden compartments",
-      "Integrated charging ports inside cabinets",
-      "Ventilation grilles for shoe closets"
+      "Floor-to-ceiling built-in storage with overhead lofts",
+      "Integrated vertical LED display tower with illuminated shelves",
+      "Full-height brushed gold vertical designer handles",
+      "Dedicated compartments for luxury accessories, handbags, and shoes",
+      "Soft-close dampened hinges and silent drawer runners"
     ],
     benefits: [
-      "Maximizes vertical space utilization",
-      "Keeps belongings dust-free and organized",
-      "Creates a clean, unified room appearance",
-      "Tailor-made for specific items (e.g. bags, keys, shoes)"
+      "Maximizes vertical space utilization from floor to ceiling",
+      "Combines concealed dust-free storage with luxury open display",
+      "Creates a clean, sophisticated, unified room aesthetic",
+      "Tailor-made for specific items (handbags, footwear, perfumes)"
     ],
     materials: [
-      "Termite-treated Commercial Blockboard",
-      "Premium grade laminate overlays",
-      "Concealed hinges",
-      "Magnetic door catches",
-      "Brushed brass or black hardware handles"
+      "High-Density Moisture-Resistant (HDMR) boards",
+      "High-gloss sage green and ivory acrylic panels",
+      "Brushed gold anodized metal hardware",
+      "Recessed warm LED accent profile strips",
+      "Heavy-duty soft-close hinges"
     ]
   },
   {
@@ -157,7 +157,7 @@ export const services: Service[] = [
     title: "Bedroom Interior",
     shortDesc: "Cozy, luxurious, and highly personalized master & guest bedrooms.",
     description: "Your bedroom is your sanctuary. We design beautiful, cozy, and functional bedrooms that reflect your personality. Includes customized bed headboards, side tables, wall paneling, false ceilings, and wardrobe integration.",
-    image: "/images/Bedroom-1interior.jpeg",
+    image: "/images/modern-bedroom-interior.jpg",
     features: [
       "Custom upholstered or wooden headboard panels",
       "Dual side tables with integrated lighting controls",
@@ -183,28 +183,28 @@ export const services: Service[] = [
     id: "7",
     slug: "living-room-interior",
     title: "Living Room Interior",
-    shortDesc: "Elegant architectural layouts, premium sofa backwalls, and lighting.",
-    description: "Welcome guests with a living room designed to inspire. We blend premium wall textures, fluted profiles, comfortable custom furniture layouts, and statement lighting to create a spacious, warm, and sophisticated living space.",
-    image: "/images/living-room-1.jpeg",
+    shortDesc: "Curved luxury seating, layered cove ceilings, and bespoke wall features.",
+    description: "Welcome guests into a breathtaking living room designed to inspire. We blend curved modular seating, concentric ceiling cove lighting, fluted architectural wall panelling, and designer ambient sconces for a serene, high-end ambiance.",
+    image: "/images/living-room-interior.jpg",
     features: [
-      "Statement wall designs (veneer, texture paint, stone profiles)",
-      "Custom spatial layout for optimal seating and transit",
-      "Suspended false ceilings with zoning lights",
-      "Custom-built partition screens (jali or wooden louvers)",
-      "Window dressing integration (sheer and blackout curtains)"
+      "Custom curved modular sectional sofas and round ottomans",
+      "Layered concentric oval ceiling cove lighting layouts",
+      "Minimalist fluted wall panelling with modern sconces",
+      "Floor-to-ceiling mirror panels and sheer window treatments",
+      "Bespoke marble & brushed brass center coffee tables"
     ],
     benefits: [
-      "Spacious and inviting feel for family and visitors",
-      "Zoned lighting to shift mood from active to relaxed",
-      "Harmonious color schemes across furniture and walls",
-      "Clever integration of utility zones within the space"
+      "Spacious, inviting, and open layout for family and guests",
+      "Warm, multi-tiered indirect lighting for relaxing evening scenes",
+      "Refined aesthetic balance of soft curves and architectural lines",
+      "Durable, stain-resistant premium fabrics and easy-care finishes"
     ],
     materials: [
-      "Oak, Teak, or Charcoal panel detailing",
-      "High-grade emulsion paint finishes",
-      "Warm ambient spotlighting systems",
-      "Aluminium/glass partitions for partition screens",
-      "Veneered or PU polished panels"
+      "Plush cream boucle and linen-blend upholstery",
+      "Moisture-resistant HDMR fluted panels",
+      "Concentric LED cove lighting channels",
+      "Brushed brass and composite marble tabletops",
+      "Low-VOC luxury emulsion wall coatings"
     ]
   },
   {
@@ -297,7 +297,7 @@ export const services: Service[] = [
     title: "Office Interior",
     shortDesc: "Productive, stylish, and ergonomic commercial workspaces.",
     description: "Elevate your business environment with workspaces designed for productivity and brand identity. From ergonomic executive cabins and conference rooms to modern linear workstations and welcoming reception lounges.",
-    image: "/images/office-interior-1.jpeg",
+    image: "/images/corporate-workspace-hub.jpg",
     features: [
       "Modular wire-managed linear desks",
       "Acoustic paneling and glass-partitioned cabins",

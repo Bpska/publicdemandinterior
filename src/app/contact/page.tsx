@@ -31,7 +31,7 @@ export default function ContactPage() {
             Contact Public Demand Interior
           </h1>
           <p className="text-gray-300 text-sm leading-relaxed">
-            Have questions about materials, budgets, or design workflows? Let's discuss your project. Submit an enquiry to direct-message us on WhatsApp or call our line.
+            Have questions about materials, budgets, or design workflows? Let&apos;s discuss your project. Submit an enquiry to direct-message us on WhatsApp or call our line.
           </p>
         </div>
       </section>

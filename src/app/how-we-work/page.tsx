@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import ProcessTimeline from "@/components/ProcessTimeline";
-import { MessageCircle, Phone } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "How We Work - Execution Timeline",

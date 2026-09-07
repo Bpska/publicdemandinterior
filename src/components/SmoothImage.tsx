@@ -5,6 +5,7 @@ import Image, { ImageProps } from "next/image";
 
 export default function SmoothImage({
   className = "",
+  alt,
   onLoad,
   ...props
 }: ImageProps) {
@@ -12,6 +13,7 @@ export default function SmoothImage({
 
   return (
     <Image
+      alt={alt || ""}
       className={`transition-all duration-700 ease-out ${
         isLoading
           ? "scale-[1.03] blur-md opacity-80"

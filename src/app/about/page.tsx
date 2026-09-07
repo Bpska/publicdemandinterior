@@ -1,7 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+
 import { ShieldCheck, MessageCircle, Sparkles, Wrench } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -123,7 +123,7 @@ export default function AboutPage() {
             Ready to Begin?
           </span>
           <h2 className="text-2xl sm:text-3xl font-light font-display text-white">
-            Let's Shape Your Dream Space Together
+            Let&apos;s Shape Your Dream Space Together
           </h2>
           <p className="text-xs sm:text-sm text-gray-400 max-w-lg mx-auto">
             Schedule a site visit in Bhubaneswar/Cuttack. Our team will measure your space and offer functional layout suggestions.

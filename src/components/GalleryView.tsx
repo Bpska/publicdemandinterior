@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import React, { useState } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { designs } from "@/data/designs";
 import Lightbox from "@/components/Lightbox";
@@ -11,7 +11,7 @@ import SmoothImage from "@/components/SmoothImage";
 
 export default function GalleryView() {
   const searchParams = useSearchParams();
-  const initialCategory = searchParams.get("category") || "All";
+
 
   const categories = [
     "All",
@@ -27,16 +27,21 @@ export default function GalleryView() {
     "Partitions",
   ];
 
-  const [activeCategory, setActiveCategory] = useState(initialCategory);
+  const router = useRouter();
+  const activeCategory = searchParams.get("category") || "All";
+
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
-  // Update active category when query changes
-  useEffect(() => {
-    const cat = searchParams.get("category");
-    if (cat) {
-      setActiveCategory(cat);
+  const handleCategoryChange = (cat: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (cat === "All") {
+      params.delete("category");
+    } else {
+      params.set("category", cat);
     }
-  }, [searchParams]);
+    // Using replace to avoid filling history with tab clicks
+    router.replace(`?${params.toString()}`, { scroll: false });
+  };
 
   // Flatten images from designs and preserve design slug for navigation
   const allImages = designs.flatMap((design) =>
@@ -47,8 +52,9 @@ export default function GalleryView() {
       title: design.title,
       style: design.style,
       isAluminium:
-        design.category.toLowerCase().includes("aluminium") ||
-        design.title.toLowerCase().includes("aluminium"),
+        (design.category.toLowerCase().includes("aluminium") ||
+          design.title.toLowerCase().includes("aluminium")) &&
+        !img.toLowerCase().includes("modular kitchen.jpeg"),
     }))
   );
 
@@ -83,7 +89,7 @@ export default function GalleryView() {
         {categories.map((cat) => (
           <button
             key={cat}
-            onClick={() => setActiveCategory(cat)}
+            onClick={() => handleCategoryChange(cat)}
             className={`px-4 py-2 text-xs font-bold tracking-widest uppercase transition-colors shrink-0 ${
               activeCategory === cat
                 ? "bg-brand-charcoal text-white"

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
 
@@ -50,13 +51,15 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex flex-col group">
-              <span className="text-xl sm:text-2xl font-semibold tracking-wider font-display text-brand-charcoal transition-colors group-hover:text-brand-champagne">
-                PUBLIC DEMAND
-              </span>
-              <span className="text-[10px] tracking-[0.25em] text-brand-champagne uppercase -mt-1 font-sans">
-                Interiors
-              </span>
+            <Link href="/" className="flex items-center group py-0.5" aria-label="Public Demand Interior">
+              <Image
+                src="/images/logo.png"
+                alt="Public Demand Interior Logo"
+                width={220}
+                height={158}
+                className="h-12 sm:h-14 md:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation */}
@@ -123,13 +126,20 @@ export default function Header() {
             className="fixed top-0 right-0 w-4/5 max-w-sm h-full bg-brand-beige shadow-2xl flex flex-col p-6 transition-transform duration-300 ease-out border-l border-brand-stone/30"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex justify-between items-center mb-10">
-              <span className="text-lg font-semibold font-display tracking-wider text-brand-charcoal">
-                NAVIGATION
-              </span>
+            <div className="flex justify-between items-center mb-8 pb-4 border-b border-brand-stone/40">
+              <Link href="/" onClick={handleLinkClick} className="flex items-center">
+                <Image
+                  src="/images/logo.png"
+                  alt="Public Demand Interior Logo"
+                  width={160}
+                  height={115}
+                  className="h-11 w-auto object-contain"
+                />
+              </Link>
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-brand-charcoal hover:text-brand-champagne transition-colors p-1"
+                aria-label="Close menu"
               >
                 <X size={24} />
               </button>

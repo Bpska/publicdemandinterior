@@ -10,7 +10,7 @@ import {
   ShieldCheck,
   Zap,
   CheckCircle,
-  HelpCircle,
+
   Star,
   Flame,
   Droplets,
@@ -96,14 +96,16 @@ export default function Home() {
         {/* Background Image Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/Guest House design-.jpeg"
-            alt="Premium Interior Background"
+            src="/images/luxury-hero-bg.jpg"
+            alt="Ultra Luxury Interior Design by Public Demand Interior"
             fill
             priority
             sizes="100vw"
-            className="object-cover opacity-20"
+            className="object-cover opacity-70 scale-105 transition-transform duration-1000"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-charcoal via-brand-charcoal/80 to-transparent" />
+          {/* Multi-layer gradient: ensures sharp text contrast on left while showcasing the luxury interior design */}
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-charcoal/90 via-brand-charcoal/55 to-brand-charcoal/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-black/30" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -156,7 +158,7 @@ export default function Home() {
           </div>
           <div className="relative aspect-[4/3] bg-brand-stone/20 border border-brand-stone/40 overflow-hidden group">
             <Image
-              src="/images/Bedroom-1interior.jpeg"
+              src="/images/modern-bedroom-interior.jpg"
               alt="Luxury bedroom interior by Public Demand Interior"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -336,13 +338,12 @@ export default function Home() {
             Interactive Space Transformation
           </h2>
           <p className="text-xs text-gray-400">
-            *Drag the slider handle sideways to compare an empty/rough structure with a premium finished Public Demand Interior setup.
+            Compare an unfinished raw structural site with the premium completed Public Demand Interior luxury architectural finish.
           </p>
         </div>
 
         <BeforeAfterSlider
-          beforeImage="/images/wall-panelling-2.jpeg"
-          afterImage="/images/Aluminium modular kitchen.jpeg"
+          afterImage="/images/after-public-demand.jpg"
           beforeLabel="Before"
           afterLabel="After – Public Demand Interior"
         />
@@ -420,7 +421,7 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-sm italic text-gray-500 leading-relaxed">
-                  "{t.text}"
+                  &quot;{t.text}&quot;
                 </p>
               </div>
 
@@ -495,7 +496,7 @@ export default function Home() {
                 Get a Quote
               </span>
               <h2 className="text-3xl sm:text-4xl font-light font-display text-brand-charcoal">
-                Let's Discuss Your Project Details
+                Let&apos;s Discuss Your Project Details
               </h2>
               <p className="text-sm text-gray-500 leading-relaxed">
                 Provide your requirements using the quote planner form. It will construct a structured pricing query that you can trigger directly to us on WhatsApp.

@@ -15,6 +15,12 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  turbopack: {
+    resolveAlias: {
+      // Force Turbopack to use the ESM build so all named exports resolve correctly
+      "lucide-react": "lucide-react/dist/esm/lucide-react.mjs",
+    },
+  },
 };
 
 export default nextConfig;

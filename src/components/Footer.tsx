@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MessageCircle, ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
@@ -29,13 +30,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Info */}
           <div className="space-y-6">
-            <Link href="/" className="flex flex-col">
-              <span className="text-2xl font-semibold tracking-wider font-display text-white">
-                PUBLIC DEMAND
-              </span>
-              <span className="text-xs tracking-[0.25em] text-brand-champagne uppercase -mt-1 font-sans">
-                Interiors
-              </span>
+            <Link href="/" className="inline-block group" aria-label="Public Demand Interior Home">
+              <Image
+                src="/images/logo-light.png"
+                alt="Public Demand Interior Logo"
+                width={220}
+                height={158}
+                className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Your Dream Home, Our Design! Premium custom modular kitchens, wardrobes, and high-end aluminium space partitioning.

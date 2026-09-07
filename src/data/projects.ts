@@ -31,25 +31,25 @@ export const projects: Project[] = [
     type: "Commercial Office",
     location: "Cuttack, Odisha",
     services: ["Office Interior", "Sliding Doors & Partitions", "False Ceiling"],
-    image: "/images/office-interior-1.jpeg",
+    image: "/images/corporate-workspace-hub.jpg",
     images: [
-      "/images/office-interior-1.jpeg",
+      "/images/corporate-workspace-hub.jpg",
       "/images/office-interior-2.jpeg",
       "/images/office-interior-3.jpeg",
     ],
-    overview: "A modern tech office layout utilizing heavy-duty aluminium glass walls to keep the floor plan acoustic yet visually open and collaborative.",
-    approach: "Designed around collaborative work zones, this layout maximizes natural light flow through top-hung sliding metal frames, matched with clean acoustic ceiling panels.",
+    overview: "A prestigious executive cabin and commercial workspace featuring sculpted 3D acoustic wave panels, luxury curved executive seating, and integrated cable concealment.",
+    approach: "Designed around ergonomic workflow and executive presence. Incorporates soft indirect lighting, horizontal daylight venetian blinds, and seamless concealed wire grids.",
     showcaseRooms: [
       {
-        room: "Conference Hall",
-        image: "/images/office-interior-1.jpeg",
-        desc: "Equipped with custom multi-point wiring channels and glass boundaries for sound insulation."
+        room: "Executive Cabin",
+        image: "/images/corporate-workspace-hub.jpg",
+        desc: "Equipped with sculpted wave acoustic wall relief, executive workstation with concealed channels, and designer velvet armchairs."
       }
     ],
     beforeAfter: {
-      before: "/images/wall-panelling-2.jpeg",
-      after: "/images/office-interior-1.jpeg",
-      title: "Unfinished Workspace to Premium Office Cabin"
+      before: "/images/bedroom-design-4.jpeg",
+      after: "/images/corporate-workspace-hub.jpg",
+      title: "Workspace Transformation"
     }
   },
   {
@@ -57,31 +57,43 @@ export const projects: Project[] = [
     title: "Premium 3BHK Apartment Interior",
     type: "Residential Apartment",
     location: "Bhubaneswar, Odisha",
-    services: ["Modular Kitchen", "Bedroom Interior", "False Ceiling", "TV Unit"],
-    image: "/images/Bedroom-1interior.jpeg",
+    services: ["Modular Kitchen", "Bedroom Interior", "Living Room Interior", "Cupboard & Storage"],
+    image: "/images/premium-3bhk-apartment-interior.jpg",
     images: [
-      "/images/Aluminium modular kitchen.jpeg",
+      "/images/premium-3bhk-apartment-interior.jpg",
+      "/images/living-room-interior.jpg",
+      "/images/cupboard-and-storage.jpg",
       "/images/Bedroom-1interior.jpeg",
-      "/images/Tv unit and console-1.jpeg",
+      "/images/Aluminium modular kitchen.jpeg",
     ],
-    overview: "This residential project represents an executive family home focusing on space optimization and luxury detailing. It integrates high-gloss acrylic modular kitchens and warm wooden wall cladding in the living spaces.",
-    approach: "We used a modern ivory and bronze color scheme to maximize light bounce inside the apartment. Glass sliding partitions were introduced to demarcate the kitchen area while maintaining visual flow.",
+    overview: "A comprehensive turnkey 3BHK residential interior design featuring an open-concept living and dining hall, an island modular kitchen, a master bedroom with walk-in closet, and secondary bedrooms.",
+    approach: "We implemented an optimized 3D architectural floor plan maximizing natural ventilation, seamless flow between culinary and living areas, and custom built-in cupboard storage solutions.",
     showcaseRooms: [
       {
-        room: "Bedroom",
-        image: "/images/Bedroom-1interior.jpeg",
-        desc: "A spacious bedroom layout with warm ambient cove lighting, custom wardrobe integration, and upholstered headboard panel."
+        room: "3BHK Complete Spatial Layout Plan",
+        image: "/images/premium-3bhk-apartment-interior.jpg",
+        desc: "3D top-down isometric layout showcasing living room, 8-seater dining area, island kitchen, master bedroom with walk-in wardrobe, and guest rooms."
+      },
+      {
+        room: "Living & Lounge Area",
+        image: "/images/living-room-interior.jpg",
+        desc: "Curved luxury sofa layout with layered circular ceiling cove lighting and minimalist fluted accents."
+      },
+      {
+        room: "Master Bedroom & Storage",
+        image: "/images/cupboard-and-storage.jpg",
+        desc: "Floor-to-ceiling built-in cupboard with display shelving, gold handles, and illuminated organizers."
       },
       {
         room: "Modular Kitchen",
         image: "/images/Aluminium modular kitchen.jpeg",
-        desc: "An ergonomic parallel layout featuring aluminium cabinets and durable quartz kitchen countertops."
+        desc: "An ergonomic layout featuring moisture-proof aluminium cabinets and durable quartz kitchen countertops."
       }
     ],
     beforeAfter: {
-      before: "/images/wall-panelling-2.jpeg",
-      after: "/images/Aluminium modular kitchen.jpeg",
-      title: "Kitchen Transformation"
+      before: "/images/after-public-demand.jpg",
+      after: "/images/premium-3bhk-apartment-interior.jpg",
+      title: "3BHK Apartment Transformation"
     }
   },
   {

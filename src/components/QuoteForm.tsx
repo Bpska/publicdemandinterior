@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { MessageCircle, FileCheck } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 export default function QuoteForm() {
   const [formData, setFormData] = useState({
