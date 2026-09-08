@@ -56,7 +56,7 @@ export default function HeroContent({ waEnquiryUrl }: HeroContentProps) {
       </h1>
 
       <p className="text-gray-300 text-base sm:text-lg font-light leading-relaxed max-w-lg">
-        Bespoke luxury interiors and high-grade aluminium architectural fabrication in Odisha.
+        Best interior designer in Odisha — offering modular kitchens, false ceilings, aluminium wardrobes & complete interior solutions across Bhubaneswar, Cuttack &amp; Puri.
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 pt-2">

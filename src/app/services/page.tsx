@@ -5,8 +5,30 @@ import { services } from "@/data/services";
 import ServiceCard from "@/components/ServiceCard";
 
 export const metadata: Metadata = {
-  title: "Our Services",
-  description: "Discover our range of 32 premium interior and construction services including modular kitchens, aluminium wardrobes, system windows, and glass partitions in Odisha.",
+  title: "Our Interior Services | Modular Kitchen, False Ceiling, Aluminium Wardrobe & More",
+  description: "Explore all 32 interior services by Public Demand Interior: modular kitchens, aluminium wardrobes, gypsum & wooden false ceilings with lighting, glass partitions, office workstations, retail shop designs, mosquito nets, plumbing, wiring, and more across Odisha.",
+  keywords: [
+    "modular kitchen Odisha",
+    "aluminium wardrobe Odisha",
+    "false ceiling design Odisha",
+    "gypsum false ceiling Odisha",
+    "wooden false ceiling Odisha",
+    "false ceiling with lighting Odisha",
+    "glass partition Odisha",
+    "aluminium partition Odisha",
+    "office interior Odisha",
+    "office workstation design Odisha",
+    "retail shop interior Odisha",
+    "showroom design Odisha",
+    "mosquito net installation Odisha",
+    "plumber service Odisha",
+    "electrical wiring Odisha",
+    "home decoration Odisha",
+    "complete interior solutions Odisha",
+    "interior contractor Bhubaneswar",
+    "interior services Cuttack",
+    "interior services Puri"
+  ],
 };
 
 export default function ServicesPage() {

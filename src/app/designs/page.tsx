@@ -4,8 +4,16 @@ import Image from "next/image";
 import DesignCatalogue from "@/components/DesignCatalogue";
 
 export const metadata: Metadata = {
-  title: "Interior Design Catalogue",
-  description: "Browse our premium design catalogue. Filter modern and minimal designs for kitchens, bedrooms, wardrobes, false ceilings, and offices in Odisha.",
+  title: "Interior Design Catalogue | Kitchens, Bedrooms, False Ceilings & Offices – Odisha",
+  description: "Browse Public Demand Interior's premium design catalogue. Modern modular kitchens, gypsum & wooden false ceilings, aluminium wardrobes, TV units, office workstations and more – serving Bhubaneswar, Cuttack & Puri, Odisha.",
+  keywords: [
+    "interior design catalogue Odisha",
+    "modular kitchen design Odisha",
+    "false ceiling design catalogue Odisha",
+    "bedroom interior design Odisha",
+    "wardrobe design Odisha",
+    "office interior catalogue Odisha"
+  ],
 };
 
 export default function DesignsPage() {

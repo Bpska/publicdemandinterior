@@ -39,9 +39,29 @@ export const metadata: Metadata = {
   description: "Public Demand Interior is a leading interior designer in Odisha offering complete interior solutions, modular kitchens, damp-resistant aluminium wardrobes, false ceilings, and custom home decor across Odisha.",
   keywords: [
     "interior designer in Odisha",
-    "bcs interior company Odisha",
+    "best interior designer in Odisha",
+    "interior design company Odisha",
     "complete interior solutions Odisha",
-    "best interior design company in Odisha"
+    "best interior design company in Odisha",
+    "home interior Odisha",
+    "home renovation Odisha",
+    "aluminium modular kitchen Odisha",
+    "modular kitchen Bhubaneswar",
+    "modular kitchen Cuttack",
+    "aluminium wardrobe Odisha",
+    "false ceiling Bhubaneswar",
+    "gypsum false ceiling Odisha",
+    "false ceiling with lighting Odisha",
+    "office setup Odisha",
+    "retail shop design Odisha",
+    "glass partition Odisha",
+    "mosquito net installation Odisha",
+    "plumber service Odisha",
+    "electrical wiring Odisha",
+    "interior contractor Bhubaneswar",
+    "interior contractor Cuttack",
+    "interior contractor Puri",
+    "turnkey interior Odisha"
   ],
 };
 
@@ -545,6 +565,79 @@ export default function Home() {
           {/* Form */}
           <div className="lg:col-span-7">
             <QuoteForm />
+          </div>
+        </div>
+      </section>
+
+      {/* 16. SEO Keywords / Areas We Serve */}
+      <section className="bg-brand-charcoal text-white py-14 border-t border-brand-stone/20" aria-label="Areas We Serve">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <span className="text-[11px] font-bold uppercase tracking-widest text-brand-champagne">Serving Odisha</span>
+            <h2 className="text-2xl sm:text-3xl font-light font-display text-white mt-2">
+              Interior Design Services Across Odisha
+            </h2>
+          </div>
+
+          {/* Service Keywords */}
+          <div className="mb-8">
+            <p className="text-center text-[10px] uppercase tracking-widest text-gray-500 font-bold mb-4">Our Specializations</p>
+            <div className="flex flex-wrap justify-center gap-2">
+              {[
+                "Modular Kitchen",
+                "Aluminium Wardrobe",
+                "False Ceiling Design",
+                "Gypsum False Ceiling",
+                "Wooden False Ceiling",
+                "False Ceiling with Lighting",
+                "Glass Partition",
+                "Aluminium Partition",
+                "Home Decoration",
+                "Complete Interior Solutions",
+                "Office Setup & Workstation",
+                "Retail Shop Design",
+                "Showroom Interior",
+                "Plumber Work",
+                "Electrical Wiring",
+                "Mosquito Net Installation",
+                "Turnkey Interior",
+                "Home Renovation",
+              ].map((kw) => (
+                <span
+                  key={kw}
+                  className="bg-white/5 border border-white/10 text-gray-300 text-[11px] font-semibold tracking-wide px-3 py-1.5 hover:bg-brand-champagne/20 hover:border-brand-champagne/40 hover:text-brand-champagne transition-colors cursor-default"
+                >
+                  {kw}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Location Keywords */}
+          <div>
+            <p className="text-center text-[10px] uppercase tracking-widest text-gray-500 font-bold mb-4">Areas We Serve</p>
+            <div className="flex flex-wrap justify-center gap-2">
+              {[
+                "Bhubaneswar",
+                "Cuttack",
+                "Puri",
+                "Bhubaneswar Interior Designer",
+                "Cuttack Interior Designer",
+                "Modular Kitchen Bhubaneswar",
+                "Modular Kitchen Cuttack",
+                "Aluminium Wardrobe Bhubaneswar",
+                "False Ceiling Bhubaneswar",
+                "Office Interior Odisha",
+                "Interior Contractor Odisha",
+              ].map((loc) => (
+                <span
+                  key={loc}
+                  className="bg-white/5 border border-white/10 text-gray-300 text-[11px] font-semibold tracking-wide px-3 py-1.5 hover:bg-brand-champagne/20 hover:border-brand-champagne/40 hover:text-brand-champagne transition-colors cursor-default"
+                >
+                  {loc}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>

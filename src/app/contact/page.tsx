@@ -5,8 +5,17 @@ import QuoteForm from "@/components/QuoteForm";
 import { Phone, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
-  description: "Contact Public Demand Interior for premium modular kitchens, wardrobes, and aluminium work in Bhubaneswar, Cuttack, and Puri. Call or WhatsApp 8144823652.",
+  title: "Contact Us | Interior Designer Bhubaneswar, Cuttack & Odisha – Public Demand Interior",
+  description: "Contact Public Demand Interior for modular kitchens, false ceilings, aluminium wardrobes, and complete interior solutions in Bhubaneswar, Cuttack, and Puri, Odisha. Call or WhatsApp +91 8144823652 for a free consultation.",
+  keywords: [
+    "interior designer contact Bhubaneswar",
+    "interior designer contact Cuttack",
+    "modular kitchen enquiry Odisha",
+    "false ceiling enquiry Odisha",
+    "interior design free consultation Odisha",
+    "WhatsApp interior designer Odisha",
+    "interior company phone number Odisha"
+  ],
 };
 
 export default function ContactPage() {

@@ -4,8 +4,18 @@ import Image from "next/image";
 import GalleryView from "@/components/GalleryView";
 
 export const metadata: Metadata = {
-  title: "Design Inspiration Gallery",
-  description: "Browse high-resolution photographs of our modular kitchens, system windows, and wardrobes. Get design inspiration for your home renovation in Odisha.",
+  title: "Interior Design Gallery | Modular Kitchen, False Ceiling & Wardrobe Photos – Odisha",
+  description: "Browse high-resolution photos of modular kitchens, gypsum & wooden false ceilings, aluminium wardrobes, glass partitions, and office interiors completed by Public Demand Interior across Bhubaneswar, Cuttack & Odisha.",
+  keywords: [
+    "modular kitchen photos Odisha",
+    "false ceiling design photos Odisha",
+    "aluminium wardrobe photos Odisha",
+    "interior design gallery Odisha",
+    "interior design inspiration Odisha",
+    "kitchen interior photos Bhubaneswar",
+    "bedroom interior Odisha",
+    "office interior photos Odisha"
+  ],
 };
 
 export default function GalleryPage() {

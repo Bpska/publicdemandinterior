@@ -5,8 +5,16 @@ import Image from "next/image";
 import { ShieldCheck, MessageCircle, Sparkles, Wrench } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us",
-  description: "Learn about Public Demand Interior' story, our commitment to waterproof and damp-resistant modular materials, and our direct site design and fabrication process in Odisha.",
+  title: "About Us | Best Interior Designer in Odisha – Public Demand Interior",
+  description: "Learn about Public Demand Interior – Odisha's leading interior design company specializing in waterproof aluminium modular kitchens, wardrobes, false ceilings, and complete home interior solutions in Bhubaneswar, Cuttack & Puri.",
+  keywords: [
+    "interior designer Odisha about",
+    "best interior company Odisha",
+    "Public Demand Interior Odisha",
+    "aluminium interior company Odisha",
+    "interior design philosophy Odisha",
+    "waterproof modular kitchen Odisha"
+  ],
 };
 
 export default function AboutPage() {
