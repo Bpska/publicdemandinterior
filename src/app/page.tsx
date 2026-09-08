@@ -35,8 +35,14 @@ import QuoteForm from "@/components/QuoteForm";
 import HeroContent from "@/components/HeroContent";
 
 export const metadata: Metadata = {
-  title: "Premium Interior Design & Aluminium Work in Odisha",
-  description: "Public Demand Interior provides premium modular kitchens, damp-resistant aluminium wardrobes, false ceilings, glass partitions, and system windows in Bhubaneswar, Cuttack, Puri, and surrounding areas.",
+  title: "Best Interior Designer in Odisha | Complete Interior Solutions",
+  description: "Public Demand Interior is a leading interior designer in Odisha offering complete interior solutions, modular kitchens, damp-resistant aluminium wardrobes, false ceilings, and custom home decor across Odisha.",
+  keywords: [
+    "interior designer in Odisha",
+    "bcs interior company Odisha",
+    "complete interior solutions Odisha",
+    "best interior design company in Odisha"
+  ],
 };
 
 export default function Home() {
