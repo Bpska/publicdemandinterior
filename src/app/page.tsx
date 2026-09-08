@@ -55,7 +55,6 @@ export default function Home() {
     { name: "Aluminium", path: "/gallery?category=Aluminium" },
     { name: "Office", path: "/gallery?category=Office" },
     { name: "False Ceiling", path: "/gallery?category=False%20Ceiling" },
-    { name: "Doors & Windows", path: "/gallery?category=Doors%20%26%20Windows" },
     { name: "Partitions", path: "/gallery?category=Partitions" },
   ];
 

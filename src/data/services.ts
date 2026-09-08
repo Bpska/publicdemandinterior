@@ -235,34 +235,7 @@ export const services: Service[] = [
       "Powder-coated metal frames"
     ]
   },
-  {
-    id: "9",
-    slug: "aluminium-doors-windows",
-    title: "Aluminium Doors & Windows",
-    shortDesc: "High-grade soundproof sliding windows, casements, and doors.",
-    description: "Upgrade your space with durable, dust-proof, and soundproof aluminium doors and windows. Available in luxury system profiles with double glazing, offering weather resistance and modern slim-sightline views.",
-    image: "/images/aluminium-doors-windows-1.jpeg",
-    features: [
-      "Heavy-duty powder-coated or anodized finish profiles",
-      "Double-glazed glass (DGU) for sound and thermal insulation",
-      "Multi-point locking systems for high security",
-      "Integrated fly mesh screen panels",
-      "Premium weather seals to block dust and rain water"
-    ],
-    benefits: [
-      "Drastically reduces outside noise entry",
-      "Highly resistant to storms, wind, and rain leakages",
-      "Smooth, silent sliding and folding mechanisms",
-      "Minimal maintenance required for decades"
-    ],
-    materials: [
-      "T6-grade architectural aluminium alloy profiles",
-      "Toughened DGU glass (5mm + 12A + 5mm or customized)",
-      "EPDM rubber gaskets for airtight sealing",
-      "German-design hardware locks and rollers",
-      "Fiberglass mesh screens"
-    ]
-  },
+
   {
     id: "10",
     slug: "sliding-doors-partitions",
@@ -555,32 +528,7 @@ export const services: Service[] = [
       "Seamless alignment borders"
     ]
   },
-  {
-    id: "21",
-    slug: "hydraulic-bed",
-    title: "Hydraulic Bed (Box Bed)",
-    shortDesc: "Smart space-saving wooden beds with heavy-duty lift-up storage.",
-    description: "Maximize your bedroom space with custom hydraulic lift-up beds. Built with heavy-duty structural frames and high-quality gas pistons, these beds allow you to easily lift the mattress and utilize the entire under-bed area for dust-free storage.",
-    image: "/images/hydraulic-bed-1.jpeg",
-    features: [
-      "Heavy-duty hydraulic gas lift cylinders",
-      "Spacious partitioned storage boxes",
-      "Sturdy reinforced steel/plywood frame",
-      "Premium upholstered headboard options"
-    ],
-    benefits: [
-      "Effortless lift-up mechanism",
-      "Generates massive hidden storage area",
-      "Eliminates dust build-up under the bed",
-      "Customizable dimensions and headboards"
-    ],
-    materials: [
-      "BWP/MR grade plywood boards",
-      "High-capacity gas spring pistons",
-      "Steel frame mattress supports",
-      "Luxury fabric/leatherette upholstery"
-    ]
-  },
+
   {
     id: "22",
     slug: "plumber-work",
@@ -660,32 +608,6 @@ export const services: Service[] = [
     ]
   },
   {
-    id: "25",
-    slug: "tile-removal",
-    title: "Tile Removal & Screeding",
-    shortDesc: "Clean, professional floor/wall tile removal and cement level preparation.",
-    description: "Preparing for a floor upgrade? We offer clean, rapid tile removal using pneumatic tools, floor debris clearing, and smooth cement screeding to prepare your floors and walls for new marble, vitrified tiles, or wooden flooring.",
-    image: "/images/transformation-before-after.jpg",
-    features: [
-      "Pneumatic chiselling for clean removal",
-      "Minimal dust containment protocols",
-      "Debris bagging and quick site clearance",
-      "Self-leveling screed cement application"
-    ],
-    benefits: [
-      "Creates a perfectly flat base for new tiles",
-      "Avoids damage to underlying structural slabs",
-      "Fast execution with heavy-duty equipment",
-      "Ensures new flooring sticks permanently"
-    ],
-    materials: [
-      "High-strength structural cement",
-      "Fine grading river sand mix",
-      "Tile adhesive bonding agents",
-      "Heavy-duty plastic protective sheets"
-    ]
-  },
-  {
     id: "26",
     slug: "bed-room-design",
     title: "Bed Room Design",
@@ -737,32 +659,7 @@ export const services: Service[] = [
       "Warm-toned LED profile channels"
     ]
   },
-  {
-    id: "28",
-    slug: "restaurant-design",
-    title: "Restaurant & Cafe Design",
-    shortDesc: "Dynamic dining space planning, kitchen workflows, and themed decors.",
-    description: "Attract diners with a stunning, themed atmosphere. We plan restaurant dining layouts, ergonomic kitchen workflows, billing/reception desks, lighting designs, acoustic installations, and eye-catching wall features.",
-    image: "/images/restaurant-design-1.jpeg",
-    features: [
-      "Maximized table capacity with comfortable transit",
-      "Industrial kitchen exhaust & pipeline routing",
-      "Themed wall paneling and custom statement lighting",
-      "Acoustic ceiling grids to reduce chatter echo"
-    ],
-    benefits: [
-      "Enhances customer dining experience and reviews",
-      "Optimized waiter pathways for fast service",
-      "Complies with commercial safety regulations",
-      "Strong, photogenic brand identity visual look"
-    ],
-    materials: [
-      "Commercial-grade laminate surfaces",
-      "Metal pipe lighting structures",
-      "Acoustic felt panels and ceiling grids",
-      "Heavy-traffic vitrified tiles / epoxy flooring"
-    ]
-  },
+
   {
     id: "29",
     slug: "guest-house-design",

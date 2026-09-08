@@ -25,7 +25,6 @@ export default function QuoteForm() {
     "Bedroom Interior",
     "Living Room Interior",
     "False Ceiling",
-    "Aluminium Doors & Windows",
     "Sliding Doors & Partitions",
     "Office Interior",
     "Home Decoration / Complete Interior",

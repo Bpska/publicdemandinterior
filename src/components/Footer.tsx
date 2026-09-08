@@ -20,7 +20,7 @@ export default function Footer() {
     { name: "Modular Kitchen", path: "/services/modular-kitchen" },
     { name: "Aluminium Wardrobe", path: "/services/aluminium-wardrobe" },
     { name: "False Ceiling & Lighting", path: "/services/false-ceiling" },
-    { name: "Aluminium Doors & Windows", path: "/services/aluminium-doors-windows" },
+    { name: "Home Decoration & Complete Interior", path: "/services/home-decoration-complete-interior" },
     { name: "Sliding Doors & Partitions", path: "/services/sliding-doors-partitions" },
   ];
 
@@ -225,10 +225,22 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500">
+        <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between text-xs text-gray-400 gap-4 text-center md:text-left">
           <p>© {new Date().getFullYear()} Public Demand Interior. All Rights Reserved.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-xs">
             <span>Modern Interior & Aluminium Specialists</span>
+            <span className="hidden sm:inline text-gray-700">•</span>
+            <p className="text-gray-400">
+              Designed & Developed by{" "}
+              <a
+                href="https://logisaaar.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-champagne font-semibold hover:underline"
+              >
+                logisaaar.in
+              </a>
+            </p>
           </div>
         </div>
       </div>

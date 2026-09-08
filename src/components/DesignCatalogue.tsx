@@ -10,7 +10,7 @@ export default function DesignCatalogue() {
   const [selectedRoom, setSelectedRoom] = useState("All");
   const [selectedStyle, setSelectedStyle] = useState("All");
 
-  const categories = ["All", "Kitchen", "Bedroom", "Living", "Wardrobe", "TV Unit", "False Ceiling", "Doors & Windows", "Partitions", "Office"];
+  const categories = ["All", "Kitchen", "Bedroom", "Living", "Wardrobe", "TV Unit", "False Ceiling", "Partitions", "Office"];
   const rooms = ["All", "Kitchen", "Bedroom", "Living Room", "Office"];
   const styles = ["All", "Modern", "Minimal", "Contemporary", "Luxury", "Traditional", "Industrial", "Scandinavian"];
 

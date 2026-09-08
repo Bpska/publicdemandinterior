@@ -23,7 +23,6 @@ export default function GalleryView() {
     "Aluminium",
     "Office",
     "False Ceiling",
-    "Doors & Windows",
     "Partitions",
   ];
 
