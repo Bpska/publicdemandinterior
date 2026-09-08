@@ -22,8 +22,8 @@ export default function BeforeAfterSlider({
 
   const hasTwoImages = beforeImage && beforeImage !== afterImage;
 
-  const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSliderPosition(Number(e.target.value));
+  const handleSliderChange = (e: React.SyntheticEvent<HTMLInputElement>) => {
+    setSliderPosition(Number(e.currentTarget.value));
   };
 
   // If a single transformation image is supplied (like the architectural Before & After composite)
@@ -134,7 +134,8 @@ export default function BeforeAfterSlider({
         max="100"
         value={sliderPosition}
         onChange={handleSliderChange}
-        className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-20"
+        onInput={handleSliderChange}
+        className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-20 touch-none"
         aria-label="Before after slider"
       />
     </div>

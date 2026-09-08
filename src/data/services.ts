@@ -353,7 +353,7 @@ export const services: Service[] = [
     title: "Mosquito Net",
     shortDesc: "Premium sliding and roller insect screens for doors and windows.",
     description: "Protect your family from insects while enjoying fresh air. Our high-durability mosquito nets feature sleek aluminium frames, premium mesh options (including fiberglass and stainless steel), and smooth sliding or roller mechanisms.",
-    image: "/images/Mosquito net.jpeg",
+    image: "/images/pleated-mosquito-net.webp",
     features: [
       "High-grade fiberglass or SS304 mesh",
       "Sleek powder-coated aluminium frames",
@@ -405,7 +405,7 @@ export const services: Service[] = [
     title: "Bend Net (Pleated Mosquito Net)",
     shortDesc: "Sleek, accordion-style foldable pleated insect screen barriers.",
     description: "Our Bend Net pleated screens feature an accordion-style folding design. They slide horizontally or vertically with ease and retract into a slim frame, making them perfect for large doors, balconies, and French windows.",
-    image: "/images/Plated mosquito net.jpeg",
+    image: "/images/pleated-mosquito-net.webp",
     features: [
       "Accordion pleated mesh design",
       "Low-profile bottom track for easy passage",
@@ -587,7 +587,7 @@ export const services: Service[] = [
     title: "Plumber Work",
     shortDesc: "Professional bathroom plumbing, pipe routing, and fixture installation.",
     description: "Ensure leak-free, long-lasting plumbing systems. We offer comprehensive plumbing services including concealed pipe routing, pressure testing, bathroom sanitaryware installation, drainage setup, and water pump systems.",
-    image: "/images/transformation-before-after.jpg",
+    image: "/images/plumber-work.webp",
     features: [
       "Concealed hot & cold water routing",
       "High-pressure leakage testing on lines",
@@ -639,7 +639,7 @@ export const services: Service[] = [
     title: "Wiring & Electrical Work",
     shortDesc: "Safe, concealed electrical wiring, switchboards, and lighting panels.",
     description: "Ensure safety and smart convenience with expert electrical wiring. We handle concealed conduit routing, fire-resistant wiring, smart home automation integration, distribution board upgrades, and luxury light fixtures.",
-    image: "/images/after-public-demand.jpg",
+    image: "/images/electrical-wiring.webp",
     features: [
       "Concealed fire-retardant conduit channels",
       "Accurate load calculation for ACs/appliances",

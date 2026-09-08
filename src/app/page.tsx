@@ -349,9 +349,11 @@ export default function Home() {
         </div>
 
         <BeforeAfterSlider
-          afterImage="/images/after-public-demand.jpg"
+          beforeImage="/images/before-transformation.png"
+          afterImage="/images/after-transformation.png"
           beforeLabel="Before"
           afterLabel="After – Public Demand Interior"
+          aspectRatio="aspect-[16/10] sm:aspect-[16/9] max-w-4xl mx-auto"
         />
       </section>
 
