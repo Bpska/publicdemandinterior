@@ -69,13 +69,6 @@ export default function HeroContent({ waEnquiryUrl }: HeroContentProps) {
           <MessageCircle size={16} className="fill-current" />
           <span>Get Free Consultation</span>
         </a>
-        <Link
-          href="/designs"
-          className="border border-white/40 text-white hover:bg-white hover:text-brand-charcoal px-8 py-4 text-xs font-bold tracking-widest uppercase transition-colors text-center flex items-center justify-center space-x-1.5"
-        >
-          <span>Explore Designs</span>
-          <ArrowRight size={14} />
-        </Link>
       </div>
     </motion.div>
   );

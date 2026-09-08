@@ -325,7 +325,7 @@ export const services: Service[] = [
     title: "Home Decoration & Complete Interior",
     shortDesc: "End-to-end turnkey residential transformation from design to handover.",
     description: "Get a hassle-free, turnkey interior design experience. We handle everything from space planning, electrical layouts, false ceilings, flooring, and paint to custom furniture and final home styling decor, delivering your dream home ready to move in.",
-    image: "/images/bedroom-design-1.jpeg",
+    image: "/images/premium-3bhk-apartment-interior.jpg",
     features: [
       "Complete turnkey execution (design, fabrication, site work, styling)",
       "Photorealistic 3D rendering designs before site startup",
@@ -587,7 +587,7 @@ export const services: Service[] = [
     title: "Plumber Work",
     shortDesc: "Professional bathroom plumbing, pipe routing, and fixture installation.",
     description: "Ensure leak-free, long-lasting plumbing systems. We offer comprehensive plumbing services including concealed pipe routing, pressure testing, bathroom sanitaryware installation, drainage setup, and water pump systems.",
-    image: "/images/false-ceiling-2.jpeg",
+    image: "/images/transformation-before-after.jpg",
     features: [
       "Concealed hot & cold water routing",
       "High-pressure leakage testing on lines",
@@ -639,7 +639,7 @@ export const services: Service[] = [
     title: "Wiring & Electrical Work",
     shortDesc: "Safe, concealed electrical wiring, switchboards, and lighting panels.",
     description: "Ensure safety and smart convenience with expert electrical wiring. We handle concealed conduit routing, fire-resistant wiring, smart home automation integration, distribution board upgrades, and luxury light fixtures.",
-    image: "/images/office-interior-3.jpeg",
+    image: "/images/after-public-demand.jpg",
     features: [
       "Concealed fire-retardant conduit channels",
       "Accurate load calculation for ACs/appliances",
@@ -665,7 +665,7 @@ export const services: Service[] = [
     title: "Tile Removal & Screeding",
     shortDesc: "Clean, professional floor/wall tile removal and cement level preparation.",
     description: "Preparing for a floor upgrade? We offer clean, rapid tile removal using pneumatic tools, floor debris clearing, and smooth cement screeding to prepare your floors and walls for new marble, vitrified tiles, or wooden flooring.",
-    image: "/images/cupboard-storage-2.jpeg",
+    image: "/images/transformation-before-after.jpg",
     features: [
       "Pneumatic chiselling for clean removal",
       "Minimal dust containment protocols",
@@ -847,7 +847,7 @@ export const services: Service[] = [
     title: "Office Set Up & Workstations",
     shortDesc: "Professional office layouts, linear cubicles, and meeting rooms.",
     description: "Configure a productive and collaborative workspace. We design and install modular cubicles, executive desks, conference room tables, networking wire channels, reception desks, and files cabinet storage units.",
-    image: "/images/office-interior-2.jpeg",
+    image: "/images/corporate-workspace-hub.jpg",
     features: [
       "Concealed under-desk wiring trays & grommets",
       "Linear workstation clusters with fabric panels",
