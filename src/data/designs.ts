@@ -298,6 +298,31 @@ export const designs: DesignItem[] = [
       "DGU double-glazed toughened clear glass panels",
       "Heavy-duty stainless steel pivot hinges and brass drop-seal threshold"
     ]
+  },
+  {
+    slug: "custom-partition-and-wall-panelling",
+    title: "Custom Partition & Wall Panelling",
+    image: "/images/partition-design-new.jpg",
+    images: [
+      "/images/partition-design-new.jpg",
+      "/images/wpc-wall-panel.jpeg",
+      "/images/wall-panelling-1.jpeg"
+    ],
+    category: "Partitions",
+    room: "Living Room",
+    style: "Modern",
+    description: "Bespoke wooden and glass custom partitions with intricate geometric CNC cutouts alongside luxury hexagonal textured wall panelling for premium living room aesthetics.",
+    features: [
+      "Custom CNC cut geometric pattern in glossy white finish",
+      "Rich teak-finish wooden framing and floating display shelves",
+      "Hexagonal stone-texture premium wall panelling",
+      "Seamless integration as a room divider between living and dining areas"
+    ],
+    materials: [
+      "Premium high-gloss laminate and acrylic panels",
+      "Teak veneer finished moisture-proof HDMR board",
+      "Textured PVC and charcoal acoustic wall panels"
+    ]
   }
 ];
 
