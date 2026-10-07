@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, MessageCircle, ArrowUpRight } from "lucide-react";
+import { Phone, MessageCircle, ArrowUpRight, MapPin } from "lucide-react";
 
 export default function Footer() {
   const quickLinks = [
@@ -40,7 +40,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-              Your Dream Home, Our Design! Premium custom modular kitchens, wardrobes, and high-end aluminium space partitioning.
+              Bhubaneswar&apos;s leading interior design & modular kitchen experts. Custom damp-proof aluminium wardrobes, false ceilings, and 2BHK/3BHK turnkey interiors across Odisha.
             </p>
             <div className="flex space-x-4">
               <a
@@ -138,9 +138,18 @@ export default function Footer() {
           {/* Contact Details */}
           <div className="space-y-6">
             <h3 className="text-sm font-semibold tracking-widest text-brand-champagne uppercase">
-              Direct Contact
+              Bhubaneswar Head Office
             </h3>
             <div className="space-y-4">
+              <div className="flex items-start space-x-3 text-gray-400">
+                <MapPin size={18} className="text-brand-champagne shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-[11px] text-gray-500 uppercase tracking-widest">Office / Workshop Location</p>
+                  <p className="text-xs font-semibold text-white mt-0.5">Bhubaneswar, Odisha - 751024</p>
+                  <p className="text-[11px] text-gray-500 mt-0.5">Serving Patia, Jaydev Vihar, Khandagiri, Cuttack & Puri</p>
+                </div>
+              </div>
+
               <a
                 href="tel:8144823652"
                 className="flex items-center space-x-3 text-gray-400 hover:text-brand-champagne group"
@@ -148,7 +157,7 @@ export default function Footer() {
                 <Phone size={18} className="text-brand-champagne" />
                 <div>
                   <p className="text-[11px] text-gray-500 uppercase tracking-widest">Call Anytime</p>
-                  <p className="text-sm font-semibold text-white group-hover:text-brand-champagne transition-colors">8144823652</p>
+                  <p className="text-sm font-semibold text-white group-hover:text-brand-champagne transition-colors">+91 8144823652</p>
                 </div>
               </a>
 
