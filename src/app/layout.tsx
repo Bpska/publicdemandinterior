@@ -160,7 +160,7 @@ const localBusinessSchema = {
     { "@type": "City", "name": "Khordha" },
     { "@type": "Place", "name": "Patia, Bhubaneswar" },
     { "@type": "Place", "name": "Chandrasekharpur, Bhubaneswar" },
-    { "@type": "Place", "name": "Jaydev Vihar, Bhubaneswar" },
+    { "@type": "Place", "name": "Jaydev Vihar,  Bhubaneswar" },
     { "@type": "Place", "name": "Saheed Nagar, Bhubaneswar" },
     { "@type": "Place", "name": "Khandagiri, Bhubaneswar" },
     { "@type": "Place", "name": "Nayapalli, Bhubaneswar" },
