@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Static URLs
   const staticPaths = [
     "",
+    "/bhubaneswar-interior-designer",
     "/about",
     "/services",
     "/designs",
@@ -23,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${path}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
-    priority: path === "" ? 1.0 : 0.8,
+    priority: path === "" || path === "/bhubaneswar-interior-designer" ? 1.0 : 0.8,
   }));
 
   // Dynamic Service Slugs

@@ -6,6 +6,7 @@ import { Phone, MessageCircle, ArrowUpRight, MapPin } from "lucide-react";
 export default function Footer() {
   const quickLinks = [
     { name: "Home", path: "/" },
+    { name: "Best Interior Designer Bhubaneswar", path: "/bhubaneswar-interior-designer" },
     { name: "Services", path: "/services" },
     { name: "Designs", path: "/designs" },
     { name: "Projects", path: "/projects" },
@@ -135,17 +136,29 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Details */}
-          <div className="space-y-6">
+          {/* Contact Details - Schema.org microdata NAP */}
+          <div className="space-y-6" itemScope itemType="https://schema.org/LocalBusiness">
+            <meta itemProp="name" content="Public Demand Interior" />
+            <meta itemProp="url" content="https://publicdemandinterior.com" />
+            <meta itemProp="telephone" content="+918144823652" />
             <h3 className="text-sm font-semibold tracking-widest text-brand-champagne uppercase">
               Bhubaneswar Head Office
             </h3>
             <div className="space-y-4">
-              <div className="flex items-start space-x-3 text-gray-400">
+              <div
+                className="flex items-start space-x-3 text-gray-400"
+                itemProp="address"
+                itemScope
+                itemType="https://schema.org/PostalAddress"
+              >
                 <MapPin size={18} className="text-brand-champagne shrink-0 mt-0.5" />
                 <div>
                   <p className="text-[11px] text-gray-500 uppercase tracking-widest">Office / Workshop Location</p>
-                  <p className="text-xs font-semibold text-white mt-0.5">Bhubaneswar, Odisha - 751024</p>
+                  <p className="text-xs font-semibold text-white mt-0.5">
+                    <span itemProp="addressLocality">Bhubaneswar</span>,{" "}
+                    <span itemProp="addressRegion">Odisha</span> -{" "}
+                    <span itemProp="postalCode">751024</span>
+                  </p>
                   <p className="text-[11px] text-gray-500 mt-0.5">Serving Patia, Jaydev Vihar, Khandagiri, Cuttack & Puri</p>
                 </div>
               </div>

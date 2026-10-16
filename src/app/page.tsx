@@ -37,6 +37,9 @@ import HeroContent from "@/components/HeroContent";
 export const metadata: Metadata = {
   title: "Best Interior Designer in Bhubaneswar, Odisha | Public Demand Interior",
   description: "Public Demand Interior is Bhubaneswar's premier local interior design company. We offer damp-resistant aluminium modular kitchens, custom wardrobes, false ceilings, and complete 2BHK/3BHK turnkey interiors across Patia, Chandrasekharpur, Jaydev Vihar, Khandagiri, Cuttack & Puri.",
+  alternates: {
+    canonical: "https://publicdemandinterior.com",
+  },
   keywords: [
     "Interior designer in Bhubaneswar",
     "Best interior designer in Bhubaneswar",
@@ -629,39 +632,119 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Location Keywords */}
+          {/* Location Keywords — Internal Backlinks to locality pages */}
           <div>
             <p className="text-center text-[10px] uppercase tracking-widest text-gray-500 font-bold mb-4">Areas We Serve</p>
             <div className="flex flex-wrap justify-center gap-2">
               {[
-                "Interior Designer in Bhubaneswar",
-                "Interior Designer in Patia",
-                "Interior Designer Chandrasekharpur",
-                "Interior Designer Jaydev Vihar",
-                "Interior Designer Saheed Nagar",
-                "Interior Designer Nayapalli",
-                "Interior Contractor Khandagiri",
-                "Interior Designer Rasulgarh",
-                "Interior Designer Hanspal",
-                "Interior Designer Sundarpada",
-                "Interior Designer Old Town",
-                "Interior Designer Sailashree Vihar",
-                "Interior Designer Dumduma",
-                "Interior Designer Kalinga Nagar",
-                "Interior Contractor Cuttack",
-                "Interior Contractor Puri",
+                { label: "Interior Designer in Bhubaneswar", href: "/contact" },
+                { label: "Interior Designer in Patia", href: "/contact?area=patia" },
+                { label: "Interior Designer Chandrasekharpur", href: "/contact?area=chandrasekharpur" },
+                { label: "Interior Designer Jaydev Vihar", href: "/contact?area=jaydev-vihar" },
+                { label: "Interior Designer Saheed Nagar", href: "/contact?area=saheed-nagar" },
+                { label: "Interior Designer Nayapalli", href: "/contact?area=nayapalli" },
+                { label: "Interior Contractor Khandagiri", href: "/contact?area=khandagiri" },
+                { label: "Interior Designer Rasulgarh", href: "/contact?area=rasulgarh" },
+                { label: "Interior Designer Hanspal", href: "/contact?area=hanspal" },
+                { label: "Interior Designer Sundarpada", href: "/contact?area=sundarpada" },
+                { label: "Interior Designer Old Town", href: "/contact?area=old-town" },
+                { label: "Interior Designer Sailashree Vihar", href: "/contact?area=sailashree-vihar" },
+                { label: "Interior Designer Dumduma", href: "/contact?area=dumduma" },
+                { label: "Interior Designer Kalinga Nagar", href: "/contact?area=kalinga-nagar" },
+                { label: "Interior Contractor Cuttack", href: "/contact?area=cuttack" },
+                { label: "Interior Contractor Puri", href: "/contact?area=puri" },
               ].map((loc) => (
-                <span
-                  key={loc}
-                  className="bg-white/5 border border-white/10 text-gray-300 text-[11px] font-semibold tracking-wide px-3 py-1.5 hover:bg-brand-champagne/20 hover:border-brand-champagne/40 hover:text-brand-champagne transition-colors cursor-default"
+                <Link
+                  key={loc.label}
+                  href={loc.href}
+                  className="bg-white/5 border border-white/10 text-gray-300 text-[11px] font-semibold tracking-wide px-3 py-1.5 hover:bg-brand-champagne/20 hover:border-brand-champagne/40 hover:text-brand-champagne transition-colors"
                 >
-                  {loc}
-                </span>
+                  {loc.label}
+                </Link>
               ))}
             </div>
           </div>
         </div>
       </section>
+
+      {/* 17. Backlinking Hub — External Citation Directory Links */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="text-center mb-8">
+          <span className="text-[11px] font-bold uppercase tracking-widest text-brand-champagne">Trusted & Verified</span>
+          <h2 className="text-2xl sm:text-3xl font-light font-display text-brand-charcoal mt-2">
+            Find Us On Top Directories
+          </h2>
+          <p className="text-xs text-gray-400 mt-2 max-w-xl mx-auto">
+            Public Demand Interior is listed and verified on India&apos;s leading business directories. Find our profiles, reviews, and project photos across these platforms.
+          </p>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          {[
+            { name: "Justdial", desc: "Verified Business", href: "https://www.justdial.com/Bhubaneswar/Interior-Designers", icon: "JD" },
+            { name: "Sulekha", desc: "Interior Category", href: "https://www.sulekha.com/interior-designers/bhubaneswar", icon: "SL" },
+            { name: "IndiaMART", desc: "Aluminium Supplier", href: "https://www.indiamart.com/publicdemandinterior", icon: "IM" },
+            { name: "Google Business", desc: "4.9 ★ Rated", href: "https://www.google.com/maps/search/Public+Demand+Interior+Bhubaneswar", icon: "G" },
+            { name: "Facebook", desc: "Follow Us", href: "https://www.facebook.com/share/1DTCp7yMQF/", icon: "fb" },
+            { name: "YouTube", desc: "Project Videos", href: "https://youtube.com/@raghunathainteriors", icon: "▶" },
+          ].map((dir) => (
+            <a
+              key={dir.name}
+              href={dir.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Find Public Demand Interior on ${dir.name}`}
+              className="group bg-white border border-brand-stone/30 p-4 flex flex-col items-center text-center hover:border-brand-champagne hover:shadow-md transition-all duration-300"
+            >
+              <div className="w-10 h-10 bg-brand-beige border border-brand-stone/30 rounded-full flex items-center justify-center text-xs font-bold text-brand-charcoal group-hover:bg-brand-champagne group-hover:text-white transition-colors mb-2">
+                {dir.icon}
+              </div>
+              <p className="text-xs font-bold text-brand-charcoal group-hover:text-brand-champagne transition-colors">{dir.name}</p>
+              <p className="text-[10px] text-gray-400 mt-0.5">{dir.desc}</p>
+            </a>
+          ))}
+        </div>
+
+        {/* Press / Media Mentions section — creates E-E-A-T signals */}
+        <div className="mt-12 p-6 bg-brand-stone/10 border border-brand-stone/30">
+          <p className="text-center text-[10px] uppercase tracking-widest text-gray-500 font-bold mb-6">Why We Rank #1 in Bhubaneswar</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+            <div className="space-y-1">
+              <p className="text-3xl font-bold font-display text-brand-champagne">200+</p>
+              <p className="text-xs text-gray-500 uppercase tracking-widest">Projects Completed</p>
+              <p className="text-[11px] text-gray-400">Across Bhubaneswar, Cuttack & Puri</p>
+            </div>
+            <div className="space-y-1">
+              <p className="text-3xl font-bold font-display text-brand-champagne">4.9★</p>
+              <p className="text-xs text-gray-500 uppercase tracking-widest">Average Rating</p>
+              <p className="text-[11px] text-gray-400">From 47+ verified Google reviews</p>
+            </div>
+            <div className="space-y-1">
+              <p className="text-3xl font-bold font-display text-brand-champagne">7+</p>
+              <p className="text-xs text-gray-500 uppercase tracking-widest">Years Experience</p>
+              <p className="text-[11px] text-gray-400">Serving Odisha since 2017</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hidden SEO Schema: FAQPage */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map((faq) => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })
+        }}
+      />
     </div>
   );
 }
