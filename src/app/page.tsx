@@ -116,7 +116,7 @@ export default function Home() {
     },
     {
       title: "Professional Execution",
-      desc: "Accurate site alignments and skilled fabrication by expert design technicians.",
+      desc: "Accurate site alignments and skilled fabrication by expert designers and technicians.",
       icon: <Wrench className="text-brand-champagne w-6 h-6" />
     },
     {
