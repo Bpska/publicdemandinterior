@@ -126,6 +126,7 @@ export const designs: DesignItem[] = [
     image: "/images/corporate-workspace-hub.jpg",
     images: [
       "/images/corporate-workspace-hub.jpg",
+      "/images/office-workstations-cubicles.jpg",
       "/images/false-ceiling-1.jpeg",
       "/images/false-ceiling-2.jpeg",
       "/images/office-interior-2.jpeg",
@@ -245,8 +246,9 @@ export const designs: DesignItem[] = [
   {
     slug: "designer-false-ceiling",
     title: "Designer False Ceiling & Ambient Lighting",
-    image: "/images/false-ceiling-recessed-cove.jpg",
+    image: "/images/false-ceiling-ambient-lighting.jpg",
     images: [
+      "/images/false-ceiling-ambient-lighting.jpg",
       "/images/false-ceiling-recessed-cove.jpg",
       "/images/false-ceiling-lotus-pop.jpg",
       "/images/false-ceiling-wave-slats.jpg",
@@ -305,8 +307,8 @@ export const designs: DesignItem[] = [
     image: "/images/partition-design-new.jpg",
     images: [
       "/images/partition-design-new.jpg",
-      "/images/wpc-wall-panel.jpeg",
-      "/images/wall-panelling-1.jpeg"
+      "/images/fluted-wall-panelling.jpg",
+      "/images/wpc-wall-panel.jpeg"
     ],
     category: "Partitions",
     room: "Living Room",

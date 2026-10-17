@@ -213,7 +213,7 @@ export const services: Service[] = [
     title: "False Ceiling & Lighting",
     shortDesc: "Modern gypsum and wooden ceilings with customized ambient lighting.",
     description: "Perfect ceilings define the atmosphere of a room. We design elegant gypsum, grid, and wooden strip ceilings that conceal wiring, house air conditioning vents, and hold custom cove and spot lighting for a clean finish.",
-    image: "/images/false-ceiling-1.jpeg",
+    image: "/images/false-ceiling-ambient-lighting.jpg",
     features: [
       "Clean gypsum board layouts with cove light pockets",
       "Accent wooden ceiling highlights or rafter beams",
@@ -482,7 +482,7 @@ export const services: Service[] = [
     title: "Wall Panelling",
     shortDesc: "Decorative MDF, PVC, charcoal, and wooden fluted panels for walls.",
     description: "Add texture and depth to your walls. We design and install high-quality wall panelling systems, including trendy fluted patterns, luxury charcoal panels, real wood veneer, and upholstered wall features for accent backdrops.",
-    image: "/images/wall-panelling-1.jpeg",
+    image: "/images/fluted-wall-panelling.jpg",
     features: [
       "Trendy fluted louvers and panel grids",
       "Hidden joint locking installation",
@@ -508,7 +508,7 @@ export const services: Service[] = [
     title: "Wall Paper",
     shortDesc: "Luxury textured, metallic, and custom 3D printed wall coverings.",
     description: "Instantly elevate your room style with luxury wallpapers. We offer a wide collection of textured papers, metallic designs, custom 3D scenic prints, and damp-resistant vinyl wallpapers installed by professional technicians.",
-    image: "/images/wall-panelling-2.jpeg",
+    image: "/images/luxury-wallpaper-decor.jpg",
     features: [
       "Damp-resistant vinyl coating layers",
       "Rich textures and embossed patterns",
@@ -561,7 +561,7 @@ export const services: Service[] = [
     title: "House Colour Design Expert",
     shortDesc: "Professional colour consultancy and premium texture painting services.",
     description: "Get the perfect color palette for your home. Our paint experts offer customized color consultations, digital previews, wall dampness checks, and professional application of luxury emulsions, metallic textures, and protective coatings.",
-    image: "/images/living-room-2.jpeg",
+    image: "/images/house-colour-design-texture.jpg",
     features: [
       "Digital 3D color combination previews",
       "Wall moisture inspection with sensors",
@@ -744,7 +744,7 @@ export const services: Service[] = [
     title: "Office Set Up & Workstations",
     shortDesc: "Professional office layouts, linear cubicles, and meeting rooms.",
     description: "Configure a productive and collaborative workspace. We design and install modular cubicles, executive desks, conference room tables, networking wire channels, reception desks, and files cabinet storage units.",
-    image: "/images/corporate-workspace-hub.jpg",
+    image: "/images/office-workstations-cubicles.jpg",
     features: [
       "Concealed under-desk wiring trays & grommets",
       "Linear workstation clusters with fabric panels",
