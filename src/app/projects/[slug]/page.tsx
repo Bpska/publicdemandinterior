@@ -12,8 +12,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const project = projects.find((p) => p.slug === slug);
   if (!project) return {};
   return {
-    title: `${project.title} Case Study`,
+    title: `${project.title} Case Study | Public Demand Interior Bhubaneswar`,
     description: project.overview || `View case study details for ${project.title}. Includes design approach, raw site before-after comparison, and completed room showcase in Odisha.`,
+    alternates: {
+      canonical: `https://www.publicdemandinterior.in/projects/${slug}`,
+    },
   };
 }
 
@@ -54,7 +57,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
       {/* Main Image Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative aspect-[21/9] w-full overflow-hidden bg-brand-stone/20 border border-brand-stone/40">
+        <div className="relative aspect-21/9 w-full overflow-hidden bg-brand-stone/20 border border-brand-stone/40">
           <Image
             src={project.image}
             alt={project.title}
@@ -63,7 +66,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-brand-charcoal/20 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-brand-charcoal/80 via-brand-charcoal/20 to-transparent" />
           
           <div className="absolute bottom-6 left-6 sm:bottom-12 sm:left-12 space-y-2 text-white">
             <span className="text-[10px] font-bold uppercase tracking-widest text-brand-champagne">
@@ -132,7 +135,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                     key={room.room}
                     className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center"
                   >
-                    <div className="md:col-span-7 aspect-[16/10] bg-brand-stone/20 border border-brand-stone/40 overflow-hidden relative">
+                    <div className="md:col-span-7 aspect-16/10 bg-brand-stone/20 border border-brand-stone/40 overflow-hidden relative">
                       <Image
                         src={room.image}
                         alt={room.room}
@@ -232,7 +235,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 
                 <Link
                   href={`/quote?notes=${encodeURIComponent("Inspired by project: " + project.title)}`}
-                  className="w-full border border-white/30 hover:bg-white hover:text-brand-charcoal py-3 text-xs font-bold tracking-widest uppercase transition-colors flex items-center justify-center text-center block"
+                  className="w-full border border-white/30 hover:bg-white hover:text-brand-charcoal py-3 text-xs font-bold tracking-widest uppercase transition-colors flex items-center justify-center text-center"
                 >
                   Request Similar Quote
                 </Link>

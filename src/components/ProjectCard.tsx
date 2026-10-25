@@ -1,11 +1,8 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
 import SmoothImage from "@/components/SmoothImage";
 import { ArrowRight, MapPin } from "lucide-react";
 import { Project } from "@/data/projects";
-import { motion } from "framer-motion";
 
 interface ProjectCardProps {
   project: Project;
@@ -13,15 +10,9 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.4 }}
-      className="group flex flex-col bg-white border border-brand-stone/40 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
-    >
+    <div className="group flex flex-col bg-white border border-brand-stone/40 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
       {/* Image container */}
-      <div className="relative aspect-[16/10] w-full overflow-hidden bg-brand-stone/20">
+      <div className="relative aspect-16/10 w-full overflow-hidden bg-brand-stone/20">
         <SmoothImage
           src={project.image}
           alt={project.title}
@@ -72,6 +63,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </Link>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

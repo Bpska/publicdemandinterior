@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "bedroom interior Odisha",
     "office interior photos Odisha"
   ],
+  alternates: {
+    canonical: "https://www.publicdemandinterior.in/gallery",
+  },
 };
 
 export default function GalleryPage() {
@@ -32,7 +35,7 @@ export default function GalleryPage() {
             className="object-cover opacity-15"
           />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4 text-center max-w-3xl">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4 text-center">
           <span className="text-[11px] font-bold uppercase tracking-widest text-brand-champagne">
             Visual Showroom
           </span>

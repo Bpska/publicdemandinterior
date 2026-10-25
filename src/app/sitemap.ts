@@ -4,7 +4,7 @@ import { designs } from "@/data/designs";
 import { projects } from "@/data/projects";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://publicdemandinterior.com";
+  const baseUrl = "https://www.publicdemandinterior.in";
 
   // Static URLs
   const staticPaths = [

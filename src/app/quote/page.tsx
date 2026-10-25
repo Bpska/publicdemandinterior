@@ -5,8 +5,11 @@ import QuoteForm from "@/components/QuoteForm";
 import { MessageCircle, HelpCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Get a Free Quote",
-  description: "Request a cost estimation for your home interior project. Pre-fill your room parameters and receive a direct estimate on WhatsApp.",
+  title: "Get a Free Interior Design Quote | Public Demand Interior Bhubaneswar",
+  description: "Request a custom cost estimation for your home interior, modular kitchen, or false ceiling project in Bhubaneswar, Odisha. Pre-fill your room parameters and receive a direct estimate.",
+  alternates: {
+    canonical: "https://www.publicdemandinterior.in/quote",
+  },
 };
 
 export default function QuotePage() {
@@ -23,7 +26,7 @@ export default function QuotePage() {
             className="object-cover opacity-15"
           />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4 text-center max-w-3xl">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4 text-center">
           <span className="text-[11px] font-bold uppercase tracking-widest text-brand-champagne">
             Cost Planner
           </span>

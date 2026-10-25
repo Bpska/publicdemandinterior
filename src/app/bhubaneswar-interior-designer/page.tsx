@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Looking for the best interior designer in Bhubaneswar? Public Demand Interior offers award-winning aluminium modular kitchens, wardrobes, false ceilings & complete 2BHK/3BHK turnkey interiors in Patia, Chandrasekharpur, Jaydev Vihar, Khandagiri & all of Bhubaneswar.",
   alternates: {
-    canonical: "https://publicdemandinterior.com/bhubaneswar-interior-designer",
+    canonical: "https://www.publicdemandinterior.in/bhubaneswar-interior-designer",
   },
   keywords: [
     "best interior designer in Bhubaneswar",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Best Interior Designer in Bhubaneswar | Public Demand Interior",
     description:
       "Bhubaneswar's #1 rated interior design company. Premium aluminium modular kitchens, custom wardrobes, false ceilings & turnkey 2BHK/3BHK interiors.",
-    url: "https://publicdemandinterior.com/bhubaneswar-interior-designer",
+    url: "https://www.publicdemandinterior.in/bhubaneswar-interior-designer",
     siteName: "Public Demand Interior",
     locale: "en_IN",
     type: "website",
@@ -38,7 +38,7 @@ const pageSchema = {
   "@type": "ItemList",
   "name": "Interior Design Services in Bhubaneswar",
   "description": "Complete list of interior design services offered by Public Demand Interior in Bhubaneswar, Odisha",
-  "url": "https://publicdemandinterior.com/bhubaneswar-interior-designer",
+  "url": "https://www.publicdemandinterior.in/bhubaneswar-interior-designer",
   "numberOfItems": 8,
   "itemListElement": [
     {
@@ -48,9 +48,9 @@ const pageSchema = {
         "@type": "Service",
         "name": "Aluminium Modular Kitchen in Bhubaneswar",
         "description": "100% waterproof, termite-proof aluminium modular kitchens designed for Bhubaneswar's humid coastal climate.",
-        "provider": { "@id": "https://publicdemandinterior.com/#localbusiness" },
+        "provider": { "@id": "https://www.publicdemandinterior.in/#localbusiness" },
         "areaServed": { "@type": "City", "name": "Bhubaneswar" },
-        "url": "https://publicdemandinterior.com/services/aluminium-modular-kitchen"
+        "url": "https://www.publicdemandinterior.in/services/aluminium-modular-kitchen"
       }
     },
     {
@@ -60,9 +60,9 @@ const pageSchema = {
         "@type": "Service",
         "name": "Aluminium Wardrobe in Bhubaneswar",
         "description": "Custom aluminium wardrobes with glass, mirror, or ACP inserts. Zero swelling, zero termites.",
-        "provider": { "@id": "https://publicdemandinterior.com/#localbusiness" },
+        "provider": { "@id": "https://www.publicdemandinterior.in/#localbusiness" },
         "areaServed": { "@type": "City", "name": "Bhubaneswar" },
-        "url": "https://publicdemandinterior.com/services/aluminium-wardrobe"
+        "url": "https://www.publicdemandinterior.in/services/aluminium-wardrobe"
       }
     },
     {
@@ -72,9 +72,9 @@ const pageSchema = {
         "@type": "Service",
         "name": "False Ceiling Design in Bhubaneswar",
         "description": "Premium gypsum false ceilings with LED cove lighting, POP borders, and custom designs.",
-        "provider": { "@id": "https://publicdemandinterior.com/#localbusiness" },
+        "provider": { "@id": "https://www.publicdemandinterior.in/#localbusiness" },
         "areaServed": { "@type": "City", "name": "Bhubaneswar" },
-        "url": "https://publicdemandinterior.com/services/false-ceiling"
+        "url": "https://www.publicdemandinterior.in/services/false-ceiling"
       }
     },
     {
@@ -84,9 +84,9 @@ const pageSchema = {
         "@type": "Service",
         "name": "Turnkey Interior Design in Bhubaneswar",
         "description": "Complete 2BHK and 3BHK interior solutions from design to handover in Bhubaneswar.",
-        "provider": { "@id": "https://publicdemandinterior.com/#localbusiness" },
+        "provider": { "@id": "https://www.publicdemandinterior.in/#localbusiness" },
         "areaServed": { "@type": "City", "name": "Bhubaneswar" },
-        "url": "https://publicdemandinterior.com/services/home-decoration-complete-interior"
+        "url": "https://www.publicdemandinterior.in/services/home-decoration-complete-interior"
       }
     }
   ]
@@ -354,3 +354,4 @@ export default function BhubaneswarInteriorDesignerPage() {
     </div>
   );
 }
+

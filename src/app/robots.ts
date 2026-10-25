@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://publicdemandinterior.com/sitemap.xml",
+    sitemap: "https://www.publicdemandinterior.in/sitemap.xml",
   };
 }

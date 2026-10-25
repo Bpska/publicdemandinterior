@@ -5,8 +5,11 @@ import ProcessTimeline from "@/components/ProcessTimeline";
 import { MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "How We Work - Execution Timeline",
-  description: "Discover our 6-step turnkey interior design and fabrication process, ensuring precise site measurement, quality hardware alignment, and transparent estimates in Odisha.",
+  title: "How We Work | Interior Design Execution Process – Public Demand Interior",
+  description: "Discover our 6-step turnkey interior design and fabrication process, ensuring precise site measurement, quality hardware alignment, and transparent estimates in Bhubaneswar, Odisha.",
+  alternates: {
+    canonical: "https://www.publicdemandinterior.in/how-we-work",
+  },
 };
 
 export default function HowWeWorkPage() {
@@ -23,7 +26,7 @@ export default function HowWeWorkPage() {
             className="object-cover opacity-15"
           />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4 text-center max-w-3xl">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4 text-center">
           <span className="text-[11px] font-bold uppercase tracking-widest text-brand-champagne">
             Execution Method
           </span>

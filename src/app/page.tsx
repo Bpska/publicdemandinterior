@@ -25,20 +25,23 @@ import { projects } from "@/data/projects";
 import { testimonials } from "@/data/testimonials";
 import { faqs } from "@/data/faqs";
 
+import dynamic from "next/dynamic";
+
 import ServiceCard from "@/components/ServiceCard";
 import DesignCard from "@/components/DesignCard";
 import ProjectCard from "@/components/ProjectCard";
-import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import ProcessTimeline from "@/components/ProcessTimeline";
-import FAQAccordion from "@/components/FAQAccordion";
-import QuoteForm from "@/components/QuoteForm";
 import HeroContent from "@/components/HeroContent";
 
+const BeforeAfterSlider = dynamic(() => import("@/components/BeforeAfterSlider"));
+const FAQAccordion = dynamic(() => import("@/components/FAQAccordion"));
+const QuoteForm = dynamic(() => import("@/components/QuoteForm"));
+
 export const metadata: Metadata = {
-  title: "Best Interior Designer in Bhubaneswar, Odisha | Public Demand Interior",
-  description: "Public Demand Interior is Bhubaneswar's premier local interior design company. We offer damp-resistant aluminium modular kitchens, custom wardrobes, false ceilings, and complete 2BHK/3BHK turnkey interiors across Patia, Chandrasekharpur, Jaydev Vihar, Khandagiri, Cuttack & Puri.",
+  title: "Interior Designer in Bhubaneswar | Public Demand Interior",
+  description: "Public Demand Interior is Bhubaneswar's trusted interior design company. We offer damp-resistant aluminium modular kitchens, custom wardrobes, false ceilings, and complete 2BHK/3BHK turnkey interiors across Patia, Chandrasekharpur, Jaydev Vihar, Khandagiri, Cuttack & Puri.",
   alternates: {
-    canonical: "https://publicdemandinterior.com",
+    canonical: "https://www.publicdemandinterior.in",
   },
   keywords: [
     "Interior designer in Bhubaneswar",
@@ -141,15 +144,16 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/luxury-hero-bg.jpg"
-            alt="Ultra Luxury Interior Design by Public Demand Interior"
+            alt="Luxury interior design by Public Demand Interior, Bhubaneswar"
             fill
-            priority
+            preload
             sizes="100vw"
+            quality={85}
             className="object-cover opacity-70 scale-105 transition-transform duration-1000"
           />
           {/* Multi-layer gradient: ensures sharp text contrast on left while showcasing the luxury interior design */}
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-charcoal/90 via-brand-charcoal/55 to-brand-charcoal/20" />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-black/30" />
+          <div className="absolute inset-0 bg-linear-to-r from-brand-charcoal/90 via-brand-charcoal/55 to-brand-charcoal/20" />
+          <div className="absolute inset-0 bg-linear-to-t from-brand-charcoal/80 via-transparent to-black/30" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -200,7 +204,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="relative aspect-[4/3] bg-brand-stone/20 border border-brand-stone/40 overflow-hidden group">
+          <div className="relative aspect-4/3 bg-brand-stone/20 border border-brand-stone/40 overflow-hidden group">
             <Image
               src="/images/modern-bedroom-interior.jpg"
               alt="Luxury bedroom interior by Public Demand Interior"
@@ -387,8 +391,8 @@ export default function Home() {
         </div>
 
         <BeforeAfterSlider
-          beforeImage="/images/before-transformation.png"
-          afterImage="/images/after-transformation.png"
+          beforeImage="/images/before-transformation.webp"
+          afterImage="/images/after-transformation.webp"
           beforeLabel="Before"
           afterLabel="After – Public Demand Interior"
           aspectRatio="aspect-[16/10] sm:aspect-[16/9] max-w-4xl mx-auto"

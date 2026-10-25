@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "interior contractor Puri"
   ],
   alternates: {
-    canonical: "./",
+    canonical: "https://www.publicdemandinterior.in/services",
   },
 };
 
@@ -59,7 +59,7 @@ export default function ServicesPage() {
             className="object-cover opacity-15"
           />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4 text-center max-w-3xl">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4 text-center">
           <span className="text-[11px] font-bold uppercase tracking-widest text-brand-champagne">
             Bhubaneswar Full-Service Interior Solutions
           </span>

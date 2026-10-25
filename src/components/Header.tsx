@@ -20,7 +20,7 @@ export default function Header() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -51,14 +51,14 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center group py-0.5" aria-label="Public Demand Interior">
+            <Link href="/" className="flex items-center group py-0.5 shrink-0" aria-label="Public Demand Interior">
               <Image
                 src="/images/logo.png"
                 alt="Public Demand Interior Logo"
-                width={220}
-                height={158}
-                className="h-12 sm:h-14 md:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-                priority
+                width={140}
+                height={100}
+                className="h-10 sm:h-12 md:h-14 w-auto max-h-12 object-contain transition-transform duration-300 group-hover:scale-105"
+                preload
               />
             </Link>
 
@@ -94,14 +94,14 @@ export default function Header() {
             </div>
 
             {/* Mobile Header Elements: WhatsApp and Hamburger */}
-            <div className="flex lg:hidden items-center space-x-4">
+            <div className="flex lg:hidden items-center space-x-2">
               {/* Floating style WhatsApp icon right in header */}
               <a
                 href="https://wa.me/918144823652?text=Hello%20Public Demand%20Interiors%2C%20I%20would%20like%20to%20discuss%20my%20interior%20project."
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp Us"
-                className="text-brand-champagne hover:text-brand-charcoal transition-colors p-2"
+                className="text-brand-champagne hover:text-brand-charcoal transition-colors min-w-11 min-h-11 flex items-center justify-center p-2"
               >
                 <MessageCircle size={24} className="fill-current" />
               </a>
@@ -110,7 +110,8 @@ export default function Header() {
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 aria-label="Toggle Menu"
-                className="text-brand-charcoal hover:text-brand-champagne transition-colors p-2"
+                aria-expanded={isMobileMenuOpen}
+                className="text-brand-charcoal hover:text-brand-champagne transition-colors min-w-11 min-h-11 flex items-center justify-center p-2"
               >
                 {isMobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
               </button>
@@ -138,7 +139,7 @@ export default function Header() {
               </Link>
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-brand-charcoal hover:text-brand-champagne transition-colors p-1"
+                className="text-brand-charcoal hover:text-brand-champagne transition-colors min-w-11 min-h-11 flex items-center justify-center p-1"
                 aria-label="Close menu"
               >
                 <X size={24} />

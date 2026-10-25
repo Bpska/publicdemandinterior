@@ -3,7 +3,6 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 import { MessageCircle } from "lucide-react";
-import { motion } from "framer-motion";
 
 export default function WhatsAppButton() {
   const pathname = usePathname();
@@ -35,20 +34,31 @@ export default function WhatsAppButton() {
 
   return (
     <div className="fixed bottom-24 sm:bottom-6 right-6 z-40">
-      <motion.a
+      <a
         href={waUrl}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        transition={{ type: "spring", stiffness: 260, damping: 20 }}
-        className="flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-2xl hover:bg-[#20ba5a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2"
+        className="flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-2xl hover:bg-[#20ba5a] transition-all duration-200 hover:scale-110 active:scale-90 focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2"
+        style={{ animation: "wa-bounce-in 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both" }}
       >
         <MessageCircle size={30} className="fill-current" />
-      </motion.a>
+      </a>
+      <style>{`
+        @keyframes wa-bounce-in {
+          from { transform: scale(0); opacity: 0; }
+          to { transform: scale(1); opacity: 1; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          a[aria-label="Chat on WhatsApp"] {
+            animation: none;
+            transition: none;
+          }
+          a[aria-label="Chat on WhatsApp"]:hover {
+            transform: none;
+          }
+        }
+      `}</style>
     </div>
   );
 }

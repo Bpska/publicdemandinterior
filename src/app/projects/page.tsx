@@ -5,8 +5,11 @@ import { projects } from "@/data/projects";
 import ProjectCard from "@/components/ProjectCard";
 
 export const metadata: Metadata = {
-  title: "Projects Portfolio",
-  description: "Explore our portfolio of completed projects, including modular kitchens, aluminium wardrobes, and designer interiors in Odisha.",
+  title: "Interior Design Projects Portfolio | Public Demand Interior Bhubaneswar",
+  description: "Explore our portfolio of completed residential and commercial interior design projects, modular kitchens, aluminium wardrobes, and turnkey interiors in Bhubaneswar, Cuttack & Odisha.",
+  alternates: {
+    canonical: "https://www.publicdemandinterior.in/projects",
+  },
 };
 
 export default function ProjectsPage() {
@@ -23,7 +26,7 @@ export default function ProjectsPage() {
             className="object-cover opacity-15"
           />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4 text-center max-w-3xl">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4 text-center">
           <span className="text-[11px] font-bold uppercase tracking-widest text-brand-champagne">
             Realized Schemes
           </span>

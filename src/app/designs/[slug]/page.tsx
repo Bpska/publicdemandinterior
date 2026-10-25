@@ -13,8 +13,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const design = designs.find((d) => d.slug === slug);
   if (!design) return {};
   return {
-    title: `${design.title} Design Concept`,
+    title: `${design.title} Design Concept | Public Demand Interior`,
     description: design.description || `Explore our ${design.title} design concept. Includes details on key features, materials used, and high-resolution visual layout.`,
+    alternates: {
+      canonical: `https://www.publicdemandinterior.in/designs/${slug}`,
+    },
   };
 }
 
@@ -65,7 +68,7 @@ export default async function DesignDetailPage({ params }: PageProps) {
           {/* Main Info Columns */}
           <div className="lg:col-span-8 space-y-10">
             {/* Visual Header */}
-            <div className="relative aspect-[16/10] w-full overflow-hidden bg-brand-stone/20 border border-brand-stone/40">
+            <div className="relative aspect-16/10 w-full overflow-hidden bg-brand-stone/20 border border-brand-stone/40">
               <Image
                 src={design.image}
                 alt={design.title}
@@ -160,7 +163,7 @@ export default async function DesignDetailPage({ params }: PageProps) {
                 </a>
                 <Link
                   href={`/quote?service=${encodeURIComponent(design.category)}&notes=${encodeURIComponent("Interested in: " + design.title)}`}
-                  className="w-full border border-white/30 hover:bg-white hover:text-brand-charcoal py-3.5 text-xs font-bold tracking-widest uppercase transition-colors flex items-center justify-center text-center block"
+                  className="w-full border border-white/30 hover:bg-white hover:text-brand-charcoal py-3.5 text-xs font-bold tracking-widest uppercase transition-colors flex items-center justify-center text-center"
                 >
                   Fill Estimate Form
                 </Link>

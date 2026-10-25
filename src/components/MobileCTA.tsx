@@ -33,7 +33,8 @@ export default function MobileCTA() {
             <Link
               key={item.name}
               href={item.path}
-              className={`flex flex-col items-center justify-center py-1.5 px-3 rounded-xl transition-all duration-300 relative ${
+              aria-label={item.name}
+              className={`flex flex-col items-center justify-center min-h-11 min-w-11 py-1 px-2.5 rounded-xl transition-all duration-300 relative ${
                 active 
                   ? "text-brand-champagne scale-105" 
                   : "text-gray-400 hover:text-white"

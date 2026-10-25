@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "interior design philosophy Odisha",
     "waterproof modular kitchen Odisha"
   ],
+  alternates: {
+    canonical: "https://www.publicdemandinterior.in/about",
+  },
 };
 
 export default function AboutPage() {
@@ -49,7 +52,7 @@ export default function AboutPage() {
             className="object-cover opacity-20"
           />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4 text-center max-w-3xl">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4 text-center">
           <span className="text-[11px] font-bold uppercase tracking-widest text-brand-champagne">
             Crafting Spaces
           </span>
@@ -79,7 +82,7 @@ export default function AboutPage() {
               We never cut corners. From heavy-duty extruded aluminium to toughened glass, every element is designed to resist water, rust, heat, and pests, keeping your home hygienic and pristine for decades.
             </p>
           </div>
-          <div className="aspect-[4/3] bg-brand-stone/20 border border-brand-stone/40 overflow-hidden relative">
+          <div className="aspect-4/3 bg-brand-stone/20 border border-brand-stone/40 overflow-hidden relative">
             <Image
               src="/images/Aluminium modular kitchen.jpeg"
               alt="Aluminium modular kitchen by Public Demand Interior"

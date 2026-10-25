@@ -139,7 +139,7 @@ export default function Footer() {
           {/* Contact Details - Schema.org microdata NAP */}
           <div className="space-y-6" itemScope itemType="https://schema.org/LocalBusiness">
             <meta itemProp="name" content="Public Demand Interior" />
-            <meta itemProp="url" content="https://publicdemandinterior.com" />
+            <meta itemProp="url" content="https://www.publicdemandinterior.in" />
             <meta itemProp="telephone" content="+918144823652" />
             <h3 className="text-sm font-semibold tracking-widest text-brand-champagne uppercase">
               Bhubaneswar Head Office

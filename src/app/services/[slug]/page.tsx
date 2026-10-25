@@ -48,12 +48,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       `Public Demand Interior`
     ],
     alternates: {
-      canonical: `https://publicdemandinterior.com/services/${service.slug}`,
+      canonical: `https://www.publicdemandinterior.in/services/${service.slug}`,
     },
     openGraph: {
       title,
       description,
-      url: `https://publicdemandinterior.com/services/${service.slug}`,
+      url: `https://www.publicdemandinterior.in/services/${service.slug}`,
       siteName: "Public Demand Interior",
       locale: "en_IN",
       type: "article",
@@ -126,7 +126,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
       "@type": "HomeAndConstructionBusiness",
       "name": "Public Demand Interior",
       "telephone": "+918144823652",
-      "url": "https://publicdemandinterior.com",
+      "url": "https://www.publicdemandinterior.in",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Bhubaneswar",
@@ -145,7 +145,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
       { "@type": "City", "name": "Puri" }
     ],
     "description": service.description,
-    "image": `https://publicdemandinterior.com${service.image}`
+    "image": `https://www.publicdemandinterior.in${service.image}`
   };
 
   const breadcrumbSchema = {
@@ -156,19 +156,19 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://publicdemandinterior.com"
+        "item": "https://www.publicdemandinterior.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://publicdemandinterior.com/services"
+        "item": "https://www.publicdemandinterior.in/services"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": service.title,
-        "item": `https://publicdemandinterior.com/services/${service.slug}`
+        "item": `https://www.publicdemandinterior.in/services/${service.slug}`
       }
     ]
   };
@@ -230,7 +230,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
       {/* Hero Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative aspect-[21/9] w-full overflow-hidden bg-brand-stone/20 border border-brand-stone/40">
+        <div className="relative aspect-21/9 w-full overflow-hidden bg-brand-stone/20 border border-brand-stone/40">
           <Image
             src={service.image}
             alt={`${service.title} in Bhubaneswar Odisha`}
@@ -239,7 +239,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/90 via-brand-charcoal/30 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-brand-charcoal/90 via-brand-charcoal/30 to-transparent" />
           
           <div className="absolute bottom-6 left-6 sm:bottom-12 sm:left-12 space-y-2 text-white max-w-3xl">
             <span className="text-[10px] font-bold uppercase tracking-widest text-brand-champagne">
